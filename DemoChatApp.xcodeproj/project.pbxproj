@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		46BFFE952C242C9600583FA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BFFE942C242C9600583FA7 /* AppDelegate.swift */; };
 		46BFFE972C242C9600583FA7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BFFE962C242C9600583FA7 /* SceneDelegate.swift */; };
-		46BFFE992C242C9600583FA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BFFE982C242C9600583FA7 /* ViewController.swift */; };
-		46BFFE9C2C242C9600583FA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BFFE9A2C242C9600583FA7 /* Main.storyboard */; };
 		46BFFE9E2C242C9800583FA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46BFFE9D2C242C9800583FA7 /* Assets.xcassets */; };
 		46BFFEA12C242C9800583FA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BFFE9F2C242C9800583FA7 /* LaunchScreen.storyboard */; };
+		46BFFEBC2C24399C00583FA7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BFFEBA2C24399C00583FA7 /* LoginViewController.swift */; };
+		46BFFEBD2C24399C00583FA7 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46BFFEBB2C24399C00583FA7 /* LoginViewController.xib */; };
+		46BFFEC02C2443D100583FA7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BFFEBE2C2443D100583FA7 /* RegisterViewController.swift */; };
+		46BFFEC12C2443D100583FA7 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46BFFEBF2C2443D100583FA7 /* RegisterViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		46BFFE912C242C9600583FA7 /* DemoChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46BFFE942C242C9600583FA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46BFFE962C242C9600583FA7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		46BFFE982C242C9600583FA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		46BFFE9B2C242C9600583FA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46BFFE9D2C242C9800583FA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46BFFEA02C242C9800583FA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46BFFEA22C242C9800583FA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46BFFEBA2C24399C00583FA7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		46BFFEBB2C24399C00583FA7 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		46BFFEBE2C2443D100583FA7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		46BFFEBF2C2443D100583FA7 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,81 @@
 		46BFFE932C242C9600583FA7 /* DemoChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				46BFFEAD2C242D2800583FA7 /* Product */,
+				46BFFEAC2C242D1E00583FA7 /* Messenger */,
 				46BFFE942C242C9600583FA7 /* AppDelegate.swift */,
 				46BFFE962C242C9600583FA7 /* SceneDelegate.swift */,
-				46BFFE982C242C9600583FA7 /* ViewController.swift */,
-				46BFFE9A2C242C9600583FA7 /* Main.storyboard */,
 				46BFFE9D2C242C9800583FA7 /* Assets.xcassets */,
-				46BFFE9F2C242C9800583FA7 /* LaunchScreen.storyboard */,
 				46BFFEA22C242C9800583FA7 /* Info.plist */,
 			);
 			path = DemoChatApp;
+			sourceTree = "<group>";
+		};
+		46BFFEA82C242CAE00583FA7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				46BFFEBA2C24399C00583FA7 /* LoginViewController.swift */,
+				46BFFEBB2C24399C00583FA7 /* LoginViewController.xib */,
+				46BFFEBE2C2443D100583FA7 /* RegisterViewController.swift */,
+				46BFFEBF2C2443D100583FA7 /* RegisterViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		46BFFEA92C242CD700583FA7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		46BFFEAA2C242CDF00583FA7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		46BFFEAB2C242CE800583FA7 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		46BFFEAC2C242D1E00583FA7 /* Messenger */ = {
+			isa = PBXGroup;
+			children = (
+				46BFFEAE2C242D6D00583FA7 /* View */,
+				46BFFEA82C242CAE00583FA7 /* Controller */,
+				46BFFEA92C242CD700583FA7 /* Model */,
+				46BFFEAA2C242CDF00583FA7 /* ViewModel */,
+				46BFFEAB2C242CE800583FA7 /* Resource */,
+			);
+			path = Messenger;
+			sourceTree = "<group>";
+		};
+		46BFFEAD2C242D2800583FA7 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		46BFFEAE2C242D6D00583FA7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46BFFEAF2C242D7500583FA7 /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		46BFFEAF2C242D7500583FA7 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				46BFFE9F2C242C9800583FA7 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +195,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46BFFEBD2C24399C00583FA7 /* LoginViewController.xib in Resources */,
 				46BFFEA12C242C9800583FA7 /* LaunchScreen.storyboard in Resources */,
 				46BFFE9E2C242C9800583FA7 /* Assets.xcassets in Resources */,
-				46BFFE9C2C242C9600583FA7 /* Main.storyboard in Resources */,
+				46BFFEC12C2443D100583FA7 /* RegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +209,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46BFFE992C242C9600583FA7 /* ViewController.swift in Sources */,
+				46BFFEBC2C24399C00583FA7 /* LoginViewController.swift in Sources */,
 				46BFFE952C242C9600583FA7 /* AppDelegate.swift in Sources */,
 				46BFFE972C242C9600583FA7 /* SceneDelegate.swift in Sources */,
+				46BFFEC02C2443D100583FA7 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		46BFFE9A2C242C9600583FA7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				46BFFE9B2C242C9600583FA7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		46BFFE9F2C242C9800583FA7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,9 +361,10 @@
 				INFOPLIST_FILE = DemoChatApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,9 +390,10 @@
 				INFOPLIST_FILE = DemoChatApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
